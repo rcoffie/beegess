@@ -14,7 +14,9 @@
 
         <div class="uk-navbar-item">
             <div>Some <a href="#">Link</a></div>
-            <a class="uk-button " href="#target" uk-scroll>Scroll down</a>
+            <a class="uk-button " href="#service" uk-scroll>Service</a>
+            <a class="uk-button " href="#work" uk-scroll>Our Works</a>
+            <a class="uk-button " href="#about" uk-scroll> About</a>
         </div>
 
         <div class="uk-navbar-item">
