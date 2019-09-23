@@ -66,6 +66,7 @@ $page_id = 1;
 </div>
 
 
+<!----------------- SERVICES ---------------->
 
 <div id="service"  class="uk-section uk-section-primary uk-background-secondary">
     <div class="uk-container">
@@ -74,7 +75,7 @@ $page_id = 1;
 
      
 
-    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+    <div uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: false" class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
     <div>
         <div class="uk-card uk-card-secondary uk-card-hover uk-card-body">
             <h3 class="uk-card-title">Default</h3>
@@ -112,12 +113,13 @@ $page_id = 1;
       <!---- Slide starts from here ------->
 
 
-      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
+      <div uk-grid uk-lightbox="animation: slide" class=" uk-position-relative uk-visible-toggle uk-light " tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true; autoplay: true ">
 
-    <ul class="uk-slider-items uk-grid">
+    <ul class=" uk-slider-items uk-grid">
         <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img src="images/arpa-sarian-xTYgMLnTJUo-unsplash.jpg" alt="">
+            <div class=" uk-panel">
+            <a href="images/arpa-sarian-xTYgMLnTJUo-unsplash.jpg"> <img src="images/arpa-sarian-xTYgMLnTJUo-unsplash.jpg" alt=""> </a>
+                
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                     <h3 class="uk-margin-remove">Bottom</h3>
                     <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -126,7 +128,10 @@ $page_id = 1;
         </li>
         <li class="uk-width-3-4">
             <div class="uk-panel">
+
+            <a href="images/christopher-jolly-GqbU78bdJFM-unsplash.jpg">   
                 <img src="images/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="">
+                </a>
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                     <h3 class="uk-margin-remove">Bottom</h3>
                     <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -135,7 +140,9 @@ $page_id = 1;
         </li>
         <li class="uk-width-3-4">
             <div class="uk-panel">
+            <a href="images/claudio-schwarz-purzlbaum-LrhCCz87YSo-unsplash.jpg"> 
                 <img src="images/claudio-schwarz-purzlbaum-LrhCCz87YSo-unsplash.jpg" alt="">
+            </a>
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                     <h3 class="uk-margin-remove">Bottom</h3>
                     <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -144,7 +151,9 @@ $page_id = 1;
         </li>
         <li class="uk-width-3-4">
             <div class="uk-panel">
+            <a href="images/dan-gold-4HG3Ca3EzWw-unsplash.jpg"> 
                 <img src="images/dan-gold-4HG3Ca3EzWw-unsplash.jpg" alt="">
+                </a>
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                     <h3 class="uk-margin-remove">Bottom</h3>
                     <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -153,7 +162,9 @@ $page_id = 1;
         </li>
         <li class="uk-width-3-4">
             <div class="uk-panel">
+            <a href="images/grovemade-vfIx29EsLHA-unsplash.jpg"> 
                 <img src="images/grovemade-vfIx29EsLHA-unsplash.jpg" alt="">
+                </a>
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
                     <h3 class="uk-margin-remove">Bottom</h3>
                     <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -162,9 +173,9 @@ $page_id = 1;
         </li>
     </ul>
 
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+ <!------   <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
+ ---->
 </div>
 
 
@@ -184,11 +195,48 @@ $page_id = 1;
 
     <div>
     <h3 class="uk-text-center uk-heading-medium uk-text-primary">About Us </h3>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body">
+        <div uk-scrollspy="cls:uk-animation-fade; delay: 500;" class="uk-card uk-card-default uk-card-large uk-card-body uk-card-hover">
         
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate reiciendis, porro eligendi adipisci ullam consectetur ipsum libero excepturi deleniti illum nam quisquam corporis, quam veritatis, saepe fugit recusandae fugiat. Magnam! lorem </p>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsum nulla culpa aperiam quibusdam, dolorem sed architecto nemo quaerat vero, eaque, rerum repellat veritatis modi quisquam veniam dolores itaque adipisci. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque ad laborum ex magni quod ab voluptatem necessitatibus numquam a fugit! Officia cum distinctio voluptatem eligendi neque ad fugit, rerum provident?</p>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!------------------ Contact us ------------------>
+
+<div id="contact" class="uk-section uk-section-muted">
+    <div class="uk-container">
+
+    
+
+    <div>
+    
+        <div class="uk-card uk-card-default uk-card-large uk-card-body">
+        <h3 class="uk-text-center  uk-heading-medium  ">Find Us</h3>
+        
+<dl class="uk-description-list uk-description-list-divider">
+    <dt>Email</dt>
+    <dd>jerry@yahoo.com </dd>
+    
+    <dt>Phone Number</dt>
+    <dd>0247008598.</dd>
+
+    <dt>OPENING HOURS</dt>
+    <dd> Mon - Fri: 7am - 10pm   </dd>
+    <dd> Saturday: 8am - 10pm   </dd>
+    <dd> Sunday: 8am - 11pm  </dd>
+​​
+
+​
+</dl>
         </div>
     </div>
 
